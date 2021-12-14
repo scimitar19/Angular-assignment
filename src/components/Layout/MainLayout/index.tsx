@@ -25,7 +25,7 @@ const MainLayout : React.FC = (props) => {
 
     },[width])
     return (
-       <Box className = "app">
+       <Box className = "mainLayout">
        <Sidebar  isOpen = {open} toggle = {toggleSidebar}/>
         <Container
         fluid

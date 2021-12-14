@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { Container } from "react-bootstrap";
 import Header from "../../Header";
 import Sidebar from "../../Sidebar";
+import Box from "../../Box";
 
 const MainLayout : React.FC = (props) => {
     const [open, setOpen] = useState (true)
@@ -11,16 +12,18 @@ const MainLayout : React.FC = (props) => {
         setOpen(!open)
     }
     return (
-       <div className = "app">
+       <Box className = "app">
        <Sidebar  isOpen = {open} toggle = {toggleSidebar}/>
         <Container
         fluid
         className={classNames("content", { "is-open": open })}
       >
         <Header isOpen = {open}  toggle = {toggleSidebar} />
-        ssss
+          <Box className = "innerSection">
+              {props?.children}
+          </Box>
       </Container>
-       </div>
+       </Box>
     )
 }
 

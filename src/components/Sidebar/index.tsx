@@ -7,6 +7,7 @@ import CertificateIcon from "./../../assets/images/icons/certificate.svg"
 import CourseIcon from "./../../assets/images/icons/course.svg"
 import ProviderIcon from "./../../assets/images/icons/provider.svg"
 import VerifiedIcon from "./../../assets/images/icons/Verified.svg"
+import Box from "../Box";
 
 interface Props {
     isOpen ?: boolean;
@@ -15,22 +16,21 @@ interface Props {
 
 const Sidebar : React.FC<Props> = (props) => {
     return (
-        <div className={props?.isOpen ? `sidebar is-open ` :  'sidebar'}>
-          <div className="sidebar-header">
+        <Box className={props?.isOpen ? `sidebar is-open ` :  'sidebar'}>
+          <Box className="sidebar-header">
             <img src = {Logo} />
 
-            <Button
+            {/* <Button
               variant="link"
               onClick={props?.toggle}
               style={{ color: "#fff" }}
               className="mt-4"
             >
-              {/* <FontAwesomeIcon icon={faTimes} pull="right" size="xs" /> */}
               close
-            </Button>
-          </div>
+            </Button> */}
+          </Box>
   
-          <Nav className="flex-column pt-2">
+          <Nav className="flex-column pt-2" onClick={props?.toggle}>
   
             <Nav.Item className="active">
               <Nav.Link href="/">
@@ -77,7 +77,7 @@ const Sidebar : React.FC<Props> = (props) => {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-        </div>
+        </Box>
       );
 }
 

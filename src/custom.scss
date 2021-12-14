@@ -1,0 +1,33 @@
+// This file is to change variable values and default styles of bootstrap
+$primary: #f9be00;
+$secondary: #272738;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+// form styles
+$form-select-focus-box-shadow: none;
+$form-select-border-radius: 8px;
+$input-focus-box-shadow: none !important;
+$form-feedback-icon-valid: none;
+$form-check-input-bg: transparent;
+$form-check-input-border: solid 1px #fff;
+$form-check-input-checked-color: #333;
+
+// dropdown styles
+$dropdown-padding-y: 0;
+$dropdown-min-width: 100%;
+$dropdown-bg: #272738;
+$dropdown-color: white;
+$dropdown-dark-color: white;
+$dropdown-link-color: white;
+$dropdown-link-hover-bg: black;
+$dropdown-border-radius: 12px;
+$dropdown-item-padding-y: 8px;
+
+// $form-select-indicator: url("data:image/svg+xml,<svg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L7 7L13 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

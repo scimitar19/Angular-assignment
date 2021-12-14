@@ -1,13 +1,17 @@
+@import "../../variables.scss";
+
+
 .bgLight{
     background: #EBEFE5;
     display: flex;
     width: 100%;
     .BannerContainer{
         color: #112A5A;
-            padding: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: auto;
+            padding-top: 8rem;
             flex-direction: column;
         .BannerHeading{
             font-family: BR Firma;
@@ -15,8 +19,9 @@
             font-weight: bold;
             font-size: 29.7931px;
         }
-        .BannerInnerContent{
-            // max-width: 300px;
+        .updateBtn{
+            background-color: $primaryColor ;
+            border: none;
         }
         .BannerText{
             font-family: Plus Jakarta Display;

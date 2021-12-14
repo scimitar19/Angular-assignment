@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import Banner from '../../assets/images/home/cover.svg';
 import Box from "../../components/Box";
 import Styles from "./home.module.scss";

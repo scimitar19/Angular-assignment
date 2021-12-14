@@ -7,16 +7,24 @@ import "./assets/fonts/br-font/stylesheet.css";
 import Layout from './components/Layout';
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from './pages/Home';
+import MainLayout from './components/Layout/MainLayout';
+import Dashboard from './pages/Dashboard';
 // const Home = lazy(() => import("./pages/Home"));
 
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
+      {/* <Layout> */}
         <Switch>
           <Route path="/" exact component={Home} />
         </Switch>
-      </Layout>
+      {/* </Layout> */}
+      <MainLayout >
+      <Switch>
+          <Route path="/" exact component={Dashboard} />
+        </Switch>
+        </MainLayout>
+
     </BrowserRouter>
   );
 }

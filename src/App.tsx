@@ -13,17 +13,15 @@ import Dashboard from './pages/Dashboard';
 function App() {
   return (
     <BrowserRouter>
-      {/* <Layout> */}
         <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/auth" exact component={Auth} />
+            <Route path="/auth/Login" exact component={Auth} />
+            <Route path="/dashboard" exact >
+              <MainLayout>
+                <Dashboard/>
+              </MainLayout>
+            </Route>
         </Switch>
-      {/* </Layout> */}
-      <MainLayout >
-      <Switch>
-          <Route path="/dashboard" exact component={Dashboard} />
-        </Switch>
-        </MainLayout>
 
     </BrowserRouter>
   );

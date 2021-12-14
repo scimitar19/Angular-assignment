@@ -8,5 +8,8 @@
 }
 .navLink{
     color: $black !important ;
-    
+    .link{
+        text-decoration: none;
+        color: $black;
+    }
 }

@@ -31,7 +31,7 @@ const Header: React.FC<Props> = (props) => {
             <span className ={`${Style.profileImageText}`}>
               milenca v.
             </span>
-            <img src={ProfileImage} alt="" className = {`${Style.profileImage}`} />
+            <img src={ProfileImage} alt="" className = {`${Style.profileImage}`}  onClick={props?.toggle}/>
         </Box>
       </Navbar.Collapse>
     </Navbar>

@@ -8,6 +8,7 @@ import CourseIcon from "./../../assets/images/icons/course.svg"
 import ProviderIcon from "./../../assets/images/icons/provider.svg"
 import VerifiedIcon from "./../../assets/images/icons/Verified.svg"
 import Box from "../Box";
+import { Link } from "react-router-dom";
 
 interface Props {
     isOpen ?: boolean;
@@ -19,7 +20,6 @@ const Sidebar : React.FC<Props> = (props) => {
         <Box className={props?.isOpen ? `sidebar is-open ` :  'sidebar'}>
           <Box className="sidebar-header">
             <img src = {Logo} />
-
             {/* <Button
               variant="link"
               onClick={props?.toggle}
@@ -33,16 +33,18 @@ const Sidebar : React.FC<Props> = (props) => {
           <Nav className="flex-column pt-2" onClick={props?.toggle}>
   
             <Nav.Item className="active">
-              <Nav.Link href="/">
+              <Nav.Link >
                 <img src = {HomeIcon} />
-                <span className  = "text">
-                  Home
-                </span>
+                <Link to='/'>
+                  <span className  = "text">
+                    Home
+                  </span>
+                </Link>
               </Nav.Link>
             </Nav.Item>
   
             <Nav.Item>
-              <Nav.Link href="/">
+              <Nav.Link >
               <img src = {CourseIcon} />
                 <span className  = "text">
                 Courses
@@ -51,7 +53,7 @@ const Sidebar : React.FC<Props> = (props) => {
             </Nav.Item>
   
             <Nav.Item>
-              <Nav.Link href="/">
+              <Nav.Link >
               <img src = {ProviderIcon} />
                 <span className  = "text">
                 Providers
@@ -60,7 +62,7 @@ const Sidebar : React.FC<Props> = (props) => {
             </Nav.Item>
   
             <Nav.Item>
-              <Nav.Link href="/">
+              <Nav.Link >
               <img src = {CertificateIcon} />
                 <span className  = "text">
                 Credentials
@@ -69,7 +71,7 @@ const Sidebar : React.FC<Props> = (props) => {
             </Nav.Item>
   
             <Nav.Item>
-              <Nav.Link href="/">
+              <Nav.Link >
               <img src = {VerifiedIcon} />
                 <span className  = "text">
                 Verify

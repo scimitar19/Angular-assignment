@@ -1,3 +1,5 @@
+@import "./../../variables.scss";
+
 .sidebar {
     min-width: 266px;
     max-width: 266px;
@@ -5,6 +7,7 @@
     color: #adb5bd;
     margin-left: -266px;
     transition: all 0.5s;
+    padding: 30px 13px 30px 30px;
   }
   
   .sidebar.is-open {
@@ -14,14 +17,11 @@
   
   
   .sidebar-header {
-    // background: #313b4c;
     color: #adb5bd;
+    padding: 30px 0px 47px;
   }
   
-  .sidebar-header h3{
-    color: #fff;
-    padding: 1em;
-  }
+  
   
   .sidebar ul p {
     color: #fff;
@@ -34,9 +34,19 @@
   }
   
   .nav-item {
-    /*color: #ced4da;*/
-    color: #adb5bd;
-    font-weight: 300;
+    margin-bottom: 12px;
+    a {
+      font-family: BR Firma;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      img {
+        margin-right: 20px;
+      }
+    }
+    
   }
   
   .nav-item.open {
@@ -45,14 +55,17 @@
   }
   
   .nav-item.active {
-    color: #e9ecef;
-    background: #2d3646 !important;
+    background:  $activeColor !important;
+    border-radius: 4px;
+
   }
   
   .nav-item:hover {
-    background: #313b4c;
-    color: #fff;
-    transition: .2s;
+    
+    transition: .2s; 
+    a {
+      color: $primaryColor !important;
+    }
   }
   
   .nav-item .svg-inline--fa {

@@ -1,7 +1,13 @@
 import React from "react";
 import  "./sidebar.scss";
 import { Nav, Button } from "react-bootstrap";
-import Logo from "./../../assets/images/logo/Logo.svg"
+import Logo from "./../../assets/images/logo/Logo.svg";
+import HomeIcon from "./../../assets/images/icons/home.svg"
+import CertificateIcon from "./../../assets/images/icons/certificate.svg"
+import CourseIcon from "./../../assets/images/icons/course.svg"
+import ProviderIcon from "./../../assets/images/icons/provider.svg"
+import VerifiedIcon from "./../../assets/images/icons/Verified.svg"
+
 interface Props {
     isOpen ?: boolean;
     toggle ?: ()=>void
@@ -22,44 +28,52 @@ const Sidebar : React.FC<Props> = (props) => {
               {/* <FontAwesomeIcon icon={faTimes} pull="right" size="xs" /> */}
               close
             </Button>
-            <h3>react-bootstrap sidebar</h3>
           </div>
   
           <Nav className="flex-column pt-2">
-            <p className="ml-3">Heading</p>
   
             <Nav.Item className="active">
               <Nav.Link href="/">
-                {/* <FontAwesomeIcon icon={faHome} className="mr-2" /> */}
-                Home
+                <img src = {HomeIcon} />
+                <span className  = "text">
+                  Home
+                </span>
               </Nav.Link>
             </Nav.Item>
   
             <Nav.Item>
               <Nav.Link href="/">
-                {/* <FontAwesomeIcon icon={faBriefcase} className="mr-2" /> */}
-                About
+              <img src = {CourseIcon} />
+                <span className  = "text">
+                Courses
+                </span>
               </Nav.Link>
             </Nav.Item>
   
             <Nav.Item>
               <Nav.Link href="/">
-                {/* <FontAwesomeIcon icon={faImage} className="mr-2" /> */}
-                Portfolio
+              <img src = {ProviderIcon} />
+                <span className  = "text">
+                Providers
+                </span>
               </Nav.Link>
             </Nav.Item>
   
             <Nav.Item>
               <Nav.Link href="/">
-                {/* <FontAwesomeIcon icon={faQuestion} className="mr-2" /> */}
-                FAQ
+              <img src = {CertificateIcon} />
+                <span className  = "text">
+                Credentials
+                </span>
               </Nav.Link>
             </Nav.Item>
   
             <Nav.Item>
               <Nav.Link href="/">
-                {/* <FontAwesomeIcon icon={faPaperPlane} className="mr-2" /> */}
-                Contact
+              <img src = {VerifiedIcon} />
+                <span className  = "text">
+                Verify
+                </span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

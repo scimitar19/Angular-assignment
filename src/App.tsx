@@ -21,7 +21,7 @@ function App() {
       {/* </Layout> */}
       <MainLayout >
       <Switch>
-          <Route path="/" exact component={Dashboard} />
+          <Route path="/dashboard" exact component={Dashboard} />
         </Switch>
         </MainLayout>
 

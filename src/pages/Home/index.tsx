@@ -2,12 +2,14 @@ import React from "react";
 import { Button, Container,Form} from "react-bootstrap";
 import Banner from '../../assets/images/home/cover.svg';
 import Box from "../../components/Box";
+import Layout from "../../components/Layout";
 
 import Styles from "./home.module.scss";
 const Home : React.FC = () => {
 
     return (
-        <Box className={Styles.bgLight}>
+        <Layout>
+            <Box className={Styles.bgLight}>
                   <Container>
                   <Box className={`${Styles.BannerContainer} w-50`}>
                             <Box className={Styles.BannerInnerContent} >
@@ -28,6 +30,7 @@ const Home : React.FC = () => {
                         <img src={Banner} className={Styles.BannerImg} alt=""/>
                     </Box>
         </Box>
+        </Layout>
     )
 }
 

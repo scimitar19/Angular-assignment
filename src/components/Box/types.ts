@@ -1,5 +1,6 @@
 export interface BoxClasses {
     className ?: string;
     style?: object
-    onClick?: ()=>void
+    onClick?: ()=>void;
+    id?: string
 }

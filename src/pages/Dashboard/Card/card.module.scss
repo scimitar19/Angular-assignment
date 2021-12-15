@@ -5,7 +5,7 @@
     border-radius: 8.56326px;
     width: 100%;
     padding: 17px;
-
+    margin-bottom: 10px;
     .text {
         font-family: BR Firma;
         font-style: normal;
@@ -25,5 +25,20 @@
     .arrowImage {
         transition: .3s;
         transform: matrix(1, 0, 0, 1, 13, 0);
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    .card {
+        padding: 10px;
+
+        .text {
+            font-size: 18.1786px;
+    
+        }
+        .arrowImage {
+            margin-right: 8px;
+        }
     }
 }

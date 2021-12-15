@@ -14,5 +14,10 @@
     line-height: 20px;
     text-align: center;
     color: #152536;
-    padding: 5.88746px 0px;
+    padding: 5.88746px 10px;
  }
+
+ #style-1::-webkit-scrollbar {
+   width: 0px;
+   display: none;
+}

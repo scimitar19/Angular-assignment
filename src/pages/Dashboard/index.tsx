@@ -3,6 +3,8 @@ import Box from "../../components/Box";
 import Heading from "../../components/Heading";
 import Alert from "./Alert";
 import Card from "./Card";
+import DashboardCourses from "./Courses";
+import Style from "./dashboard.module.scss";
 const Dashboard : React.FC = (props) => {
 
     return (
@@ -19,6 +21,17 @@ const Dashboard : React.FC = (props) => {
                 </Box>
                 <Box className = "col-md-4">
                     <Card text = {'Add Credential'}/>
+                </Box>
+            </Box>
+
+            <Box className = "row">
+                <Box className = "col-md-8">
+                    <Heading  text = "Recently Added Courses" classes = {`${Style.midLevelHeading}`}/>
+                    
+                    <DashboardCourses/>
+                </Box>
+                <Box className = "col-md-4">
+                
                 </Box>
             </Box>
             

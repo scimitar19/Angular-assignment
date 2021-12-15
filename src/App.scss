@@ -2,5 +2,17 @@
 @import "./variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
- 
-
+ .successAlert {
+    background: #D1E7DD;    
+    border: 0.490622px solid #A3CFBB;
+    box-sizing: border-box;
+    border-radius: 3.92498px;
+    font-family: BR Firma;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #152536;
+    padding: 5.88746px 0px;
+ }

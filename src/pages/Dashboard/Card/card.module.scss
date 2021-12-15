@@ -1,0 +1,29 @@
+@import './../../../variables.scss';
+
+.card {
+    background: $primaryColor;
+    border-radius: 8.56326px;
+    width: 100%;
+    padding: 17px;
+
+    .text {
+        font-family: BR Firma;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24.1786px;
+        line-height: 30px;
+        color: #FFFFFF;
+        
+    }
+    .arrowImage {
+        margin-right: 8px;
+    }
+}
+.card:hover {
+    transition: .5s;
+    background: #02602f;
+    .arrowImage {
+        transition: .3s;
+        transform: matrix(1, 0, 0, 1, 13, 0);
+    }
+}

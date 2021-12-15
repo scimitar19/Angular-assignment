@@ -41,4 +41,7 @@
             padding-bottom: 10px;
         }
     }
+    .featureCard:hover {
+        background-color: $activeColor;
+    }
 }

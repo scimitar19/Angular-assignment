@@ -1,0 +1,44 @@
+@import "./../../../variables.scss";
+
+.featureCardMain {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: flex-start;    
+    padding: 0px 0px 20px;  
+    
+    .featureCard {
+        // display: inline-block;
+        min-width: 213px;
+        margin-right: 1.7rem;
+        // position: relative;
+        background: #FFFFFF;
+        border: 1px solid #F1F4F6;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        padding: 22px 11px;
+        
+        .heading {
+            font-family: BR Firma;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: $primaryColor;
+
+        }
+        .colorBlue {
+            color: $colorBlue !important;
+        }
+        .text {
+            font-family: BR Firma;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #152536;
+            min-height: 75px;
+            padding-bottom: 10px;
+        }
+    }
+}

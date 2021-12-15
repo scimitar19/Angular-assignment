@@ -36,7 +36,9 @@ const Dashboard : React.FC = (props) => {
 
                 </Box>
                 <Box className = "col-md-4">
-                
+                    <Box className={`boxWithShadow ${Style.sideBox}`}>
+                        <Heading text="Number of credentials sent" classes = {`appSubHeading text-center`} />
+                    </Box>
                 </Box>
             </Box>
             

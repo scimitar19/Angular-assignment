@@ -21,3 +21,10 @@
    width: 0px;
    display: none;
 }
+.boxWithShadow {
+   background: #FFFFFF;
+   border: 1px solid #F1F4F6;
+   box-sizing: border-box;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+   border-radius: 4px
+}

@@ -1,0 +1,39 @@
+@import "./../../../variables.scss";
+
+.mainBox{
+    padding-left: 14px ;
+    padding-right: 14px ;
+    padding-bottom: 25px;
+    .heading {
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border-bottom: 2px solid #DEE2E6;
+
+    }
+    .rowOne {
+        background: #F8F9FA;
+        border-bottom: 1px solid #DEE2E6;
+        display: flex;
+        padding: 10px;
+        .text {
+            font-family: BR Firma;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration-line: underline;
+            color: $colorBlue;
+
+        }
+        .one {
+            width: 20%;
+        }
+        .two {
+            width: 80%;
+        }
+    }
+
+    .backgroundWhite {
+        background-color: white;
+    }
+}

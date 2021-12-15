@@ -5,13 +5,14 @@ import Alert from "./Alert";
 import Card from "./Card";
 import DashboardCourses from "./Courses";
 import Style from "./dashboard.module.scss";
+import Provider from "./Porvider";
 const Dashboard : React.FC = (props) => {
 
     return (
        <>
         <Box className = "">
             <Alert />
-            <Heading  text = "Dashboard"/>
+            <Heading  text = "Dashboard" classes = {'heading'}/>
             <Box className = "row">
                 <Box className = "col-md-4">
                     <Card text = {'Add Provider'}/>
@@ -26,9 +27,13 @@ const Dashboard : React.FC = (props) => {
 
             <Box className = "row">
                 <Box className = "col-md-8">
-                    <Heading  text = "Recently Added Courses" classes = {`${Style.midLevelHeading}`}/>
+                    <Heading  text = "Recently Added Courses" classes = {`appSubHeading`}/>
                     
                     <DashboardCourses/>
+
+                    <Provider/>
+
+
                 </Box>
                 <Box className = "col-md-4">
                 

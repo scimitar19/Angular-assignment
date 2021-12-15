@@ -41,29 +41,7 @@ const Dashboard : React.FC = (props) => {
             </Box>
             
         </Box>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-        <div className = "mb-5">Dasadasd</div>
-
-
+        
        </>
     )
 }

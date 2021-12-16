@@ -13,8 +13,7 @@ const Verify: React.FC = ()=>{
           </Box>
           <Button className={`${Style.updatedBtn}`} >Upload</Button>
       </Box>
-    )
-    
+    ) 
 }
 
 export default Verify

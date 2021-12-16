@@ -1,0 +1,175 @@
+@import "../../../variables.scss";
+
+
+$icon-margin:  0  15px 0 0;
+@mixin socialMediaButton {
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    margin: 10px 0;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bgLight{
+    background: #EBEFE5;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    overflow: scroll;
+    width: 100%;
+    flex-direction: column;
+    .textColor{
+        color:  $primaryColor !important;
+    }
+    .Box{
+
+        width: 400px;
+        margin: 20px auto;
+        padding: 25px 32px;
+        color: #112A5A;
+        .signInHeading{
+            font-family: 'Plus Jakarta Display';
+            font-weight: bold;
+            font-size: 24px;
+            
+        }
+        .signUpText{
+            font-family: 'Plus Jakarta Display';
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            margin-top: 12px;
+        }
+        
+
+        .updateBtn{
+            background-color: $primaryColor  ;
+            width: 100%;
+            border: none;
+            margin: 10px 0;
+            padding: 10px 0;
+          }
+    }
+
+    
+    .signUpForm{
+        margin-top: 20px;
+        .Label{
+            color: $grey;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 14px;
+        }
+        .Select{
+            border: 3px solid $lightGrey;
+            margin-bottom: 15px;
+        }
+        
+        .Control{
+            border: 3px solid $lightGrey;
+            background-color: #FAFBFC45;
+            &:hover{
+                border: 3px solid $primaryColor;
+            }
+            &:active{
+                border: 3px solid $primaryColor;
+            }
+            &::placeholder{
+                color: #000000;
+            }
+        }
+       .signUp{
+            font-family: Plus Jakarta Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            color: $primaryColor;
+            text-decoration: none;
+        }
+
+        .socialMedia{
+            width: 100%;
+            
+            h6{
+             text-align: center;
+             overflow: hidden;
+             z-index: 1;
+             
+                &::before{
+                    position: absolute;
+                    top: 62.4%;
+                    overflow: hidden;
+                    width: 40%;
+                    margin-left: -40%;
+                    height: 1px;
+                    padding: 1px;
+                    content: '\a0';
+                    background-color: rgb(212, 212, 212);
+                }
+                &::after{
+                    position: absolute;
+                    top: 62.4%;
+                    overflow: hidden;
+                    padding: 1px;
+                    width: 40%;
+                    height: 1px;
+                    content: '" "\a0';
+                    background-color: rgb(212, 212, 212);
+                }
+            }
+        }
+
+        .appel{
+            @include socialMediaButton;
+            color: white;
+            background: #000000;
+            img{    
+                margin:  $icon-margin;
+            }
+        }
+        
+
+        .google{
+            @include socialMediaButton;
+            img{    
+                margin:  $icon-margin;
+            }
+        }
+
+        .linkedin{
+            @include socialMediaButton;
+            background: #1F3FA9;
+            img{    
+                margin:  $icon-margin;
+            }
+        }
+        
+        .facebook{
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            margin: 10px 0;
+            background: #0E5EB5;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{    
+                margin:  $icon-margin;
+            };
+            
+        }
+        
+    }
+
+
+}
+
+
+
+ 
+

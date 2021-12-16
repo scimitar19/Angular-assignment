@@ -8,6 +8,7 @@ import Auth from "./pages/Auth";
 import MainLayout from "./components/Layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import CoursesView from "./pages/CoursesView";
+import { StaticRoutesEnum } from "./utils/Enums/Routes";
 // const Home = lazy(() => import("./pages/Home"));
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/auth/Login" exact component={Auth} />
         <MainLayout>
-          <Route path="/dashboard" exact component={Dashboard} />
-          <Route path="/courses" exact component={CoursesView} />
+          <Route path={StaticRoutesEnum.DAHBOARD} exact component={Dashboard} />
+          <Route path={StaticRoutesEnum.COURSES} exact component={CoursesView} />
         </MainLayout>
       </Switch>
     </BrowserRouter>

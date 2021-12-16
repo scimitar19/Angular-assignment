@@ -1,0 +1,59 @@
+.MainTable {
+    .hkMDrI{
+        border-radius: 4px !important;
+
+    }
+}
+.rdt_Table {
+    background: #FFFFFF;
+    border: 1px solid #F1F4F6;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px !important;
+    padding: 2rem; 
+    .rdt_TableHead {
+        border-top: 1px solid #DEE2E6;
+        font-family: BR Firma;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #152536;
+    }
+    .rdt_TableBody {
+        border-bottom: 1px solid #DEE2E6;
+        .rdt_TableRow{
+        font-family: BR Firma;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #152536;
+       }
+        .rdt_TableRow:nth-child(odd) {background-color: #F8F9FA !important;}
+
+    }
+}
+.tableActiveStatus {
+    div {
+        display : flex;
+        background: #DFE1E6;
+        border-radius: 3px;
+        color: #42526E; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        padding: 2px 10px;
+    }
+}
+.rdt_TableCol {
+    justify-content: space-between !important;
+}
+.rdt_TableCol_Sortable {
+    svg {
+        opacity: 1 !important;
+        height: 11px !important;
+        width: 28px !important;
+    }
+}

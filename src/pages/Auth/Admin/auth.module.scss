@@ -1,0 +1,85 @@
+@import "../../../variables.scss";
+
+.bgLight{
+    background: #EBEFE5;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    overflow: scroll;
+    width: 100%;
+    flex-direction: column;
+    .textColor{
+        color:  $primaryColor !important;
+    }
+    .Box{
+
+        width: 400px;
+        margin: 20px auto;
+        padding: 25px 32px;
+        color: #112A5A;
+        .signInHeading{
+            font-family: 'Plus Jakarta Display';
+            font-weight: bold;
+            font-size: 24px;
+            
+        }
+        .signUpText{
+            font-family: 'Plus Jakarta Display';
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            margin-top: 12px;
+        }
+        
+
+        .updateBtn{
+            background-color: $primaryColor  ;
+            width: 100%;
+            border: none;
+            padding: 10px 0;
+          }
+    }
+    
+    .signUpForm{
+        margin-top: 20px;
+        .Label{
+            color: $grey;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 14px;
+        }
+        .Select{
+            border: 3px solid $lightGrey;
+            margin-bottom: 15px;
+        }
+        
+        .Control{
+            border: 3px solid $lightGrey;
+            background-color: #FAFBFC45;
+            &:hover{
+                border: 3px solid $primaryColor;
+            }
+            &:active{
+                border: 3px solid $primaryColor;
+            }
+            &::placeholder{
+                color: #000000;
+            }
+        }
+       .signUp{
+            
+            font-family: Plus Jakarta Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            color: $primaryColor;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+ 

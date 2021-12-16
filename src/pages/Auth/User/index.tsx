@@ -2,8 +2,8 @@ import React from "react";
 import {  Form, Button, Card } from "react-bootstrap";
 import Box from "../../../components/Box";
 import Styles from './auth.module.scss';
-import Logo from '../../../assets/images/home/siteLogo.svg';
 
+import Logo from '../../../assets/images/home/siteLogo.svg';
 import appelIcon from '../../../assets/icons/apple.svg';
 import googleIcon from '../../../assets/icons/google.svg';
 import linkedinIcon from '../../../assets/icons/linkedin.svg';
@@ -28,9 +28,11 @@ import facebookIcon from '../../../assets/icons/facebook.svg';
             <Box className={Styles.signInHeading}>
                 User Sign up
             </Box>
+
             <Box className={Styles.signUpText}>
                 Enter your details below
             </Box>
+
             </Box>
             <Form className={Styles.signUpForm}>
                 <Form.Group controlId="fromBasicName">
@@ -56,8 +58,7 @@ import facebookIcon from '../../../assets/icons/facebook.svg';
                     </Button>
                     <Button  className={`${Styles.google} btn-block`}>
                         <img src={googleIcon} alt="" /><span>Sign up with Google </span>                
-                    </Button>
-                    
+                    </Button> 
                     <Button  className={`${Styles.linkedin}  btn-block`}>
                         <img src={linkedinIcon} alt="" /> <span>Sign up with Linkedin </span>                
                     </Button>
@@ -69,7 +70,6 @@ import facebookIcon from '../../../assets/icons/facebook.svg';
           </Card>
        </Box>
     )
-
 }
 
 

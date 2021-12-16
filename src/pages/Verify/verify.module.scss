@@ -4,7 +4,7 @@
 
 
 .BoxContainer{
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -43,6 +43,7 @@
             background: $primaryColor;
             height: 50px;
             width: 500px;
+            margin-bottom: 100px;
             border: none;
             &:hover{
                 background: #000000;

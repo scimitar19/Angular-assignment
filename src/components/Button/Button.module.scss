@@ -1,0 +1,25 @@
+@import "./../../variables.scss";
+
+.dynamicBtn {
+    border-radius: 3px;
+    background: $primaryColor;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.084px;
+height: 40px;
+    /* BRAND WHITE */
+
+    color: #FFFFFF;
+
+}
+.marginLeft {
+    margin-left: 5px;
+}
+.dynamicBtn:hover {
+    background: lightgrey;
+    color: #42526E;
+}
+button:focus {
+    outline: unset !important;
+}

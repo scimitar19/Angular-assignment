@@ -9,6 +9,8 @@ import ProviderIcon from "./../../assets/images/icons/provider.svg"
 import VerifiedIcon from "./../../assets/images/icons/Verified.svg"
 import Box from "../Box";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+import { StaticRoutesEnum } from "../../utils/Enums/Routes";
 
 interface Props {
     isOpen ?: boolean;
@@ -16,10 +18,12 @@ interface Props {
 }
 
 const Sidebar : React.FC<Props> = (props) => {
+  const location = useLocation();
+  console.log(location.pathname)
     return (
         <Box className={props?.isOpen ? `sidebar is-open ` :  'sidebar'}>
           <Box className="sidebar-header">
-            <img src = {Logo} />
+            <img src = {Logo} onClick={props?.toggle}/>
             {/* <Button
               variant="link"
               onClick={props?.toggle}
@@ -30,9 +34,9 @@ const Sidebar : React.FC<Props> = (props) => {
             </Button> */}
           </Box>
   
-          <Nav className="flex-column pt-2" onClick={props?.toggle}>
+          <Nav className="flex-column pt-2" >
   
-            <Nav.Item className="active">
+            <Nav.Item className = {location.pathname === StaticRoutesEnum.DAHBOARD ? 'active' : ''}>
               <Nav.Link >
                 <img src = {HomeIcon} />
                 <Link to='/'>
@@ -43,8 +47,8 @@ const Sidebar : React.FC<Props> = (props) => {
               </Nav.Link>
             </Nav.Item>
   
-            <Nav.Item>
-              <Nav.Link >
+            <Nav.Item className = {location.pathname === StaticRoutesEnum.COURSES ? 'active' : ''}>
+              <Nav.Link href = {StaticRoutesEnum.COURSES}>
               <img src = {CourseIcon} />
                 <span className  = "text">
                 Courses
@@ -52,8 +56,8 @@ const Sidebar : React.FC<Props> = (props) => {
               </Nav.Link>
             </Nav.Item>
   
-            <Nav.Item>
-              <Nav.Link >
+            <Nav.Item className = {location.pathname === StaticRoutesEnum.PROVIDER ? 'active' : ''}>
+              <Nav.Link href = {StaticRoutesEnum.PROVIDER}>
               <img src = {ProviderIcon} />
                 <span className  = "text">
                 Providers

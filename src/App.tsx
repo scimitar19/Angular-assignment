@@ -9,9 +9,9 @@ import AdminSingUp from "./pages/Auth/Admin";
 import MainLayout from "./components/Layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import CoursesView from "./pages/CoursesView";
+import { StaticRoutesEnum } from "./utils/Enums/Routes";
 import Verify from "./pages/Verify";
 import UserSignUp from "./pages/Auth/User";
-
 // const Home = lazy(() => import("./pages/Home"));
 
 function App() {
@@ -24,6 +24,8 @@ function App() {
         <Route path="/auth/admin/Singup" exact component={AdminSingUp} />
         
         <MainLayout>
+          <Route path={StaticRoutesEnum.DAHBOARD} exact component={Dashboard} />
+          <Route path={StaticRoutesEnum.COURSES} exact component={CoursesView} />
           <Route path="/verify" exact component={Verify} />
           <Route path="/dashboard" exact component={Dashboard} />
           <Route path="/courses" exact component={CoursesView} />

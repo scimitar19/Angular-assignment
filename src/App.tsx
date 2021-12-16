@@ -10,7 +10,7 @@ import MainLayout from "./components/Layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import CoursesView from "./pages/CoursesView";
 import Verify from "./pages/Verify";
-import UserSignUp from "./pages/Auth/Users";
+import UserSignUp from "./pages/Auth/User";
 
 // const Home = lazy(() => import("./pages/Home"));
 
@@ -20,7 +20,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/auth/Login" exact component={Auth} />
-        <Route path="/auth/user/Sinup" exact component={UserSignUp} />
+        <Route path="/auth/user/Signup" exact component={UserSignUp} />
         <Route path="/auth/admin/Singup" exact component={AdminSingUp} />
         
         <MainLayout>

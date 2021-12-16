@@ -3,6 +3,8 @@ import {  Form, Button, Card } from "react-bootstrap";
 import Box from "../../components/Box";
 import Styles from './auth.module.scss';
 import Logo from '../../assets/images/home/siteLogo.svg';
+import { Link } from 'react-router-dom'
+
 const Auth : React.FC = () => {
 
     return (
@@ -40,7 +42,7 @@ const Auth : React.FC = () => {
                     Login
                 </Button>
                 <Box className="text-center" style={{marginTop: '45px'}}>
-                    Don't have an account? <a href="/#" className={Styles.signUp}>Sign Up</a>  
+                    Don't have an account? <Link to="/auth/user/signup" className={Styles.signUp}>Sign Up</Link>  
                 </Box>
             </Form>
 

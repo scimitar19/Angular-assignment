@@ -5,9 +5,12 @@ import "./assets/fonts/br-font/stylesheet.css";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
+import AdminSingUp from "./pages/Auth/Admin";
 import MainLayout from "./components/Layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import CoursesView from "./pages/CoursesView";
+import Verify from "./pages/Verify";
+
 // const Home = lazy(() => import("./pages/Home"));
 
 function App() {
@@ -16,7 +19,10 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/auth/Login" exact component={Auth} />
+        <Route path="/auth/admin/Singup" exact component={AdminSingUp} />
+        
         <MainLayout>
+          <Route path="/verify" exact component={Verify} />
           <Route path="/dashboard" exact component={Dashboard} />
           <Route path="/courses" exact component={CoursesView} />
         </MainLayout>

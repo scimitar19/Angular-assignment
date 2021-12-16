@@ -25,15 +25,22 @@ const Menu : React.FC = () => {
                 </Link>
             </Nav.Link>
             <Nav.Link   className={Styles.navLink}>About Us</Nav.Link>
-            <Nav.Link   className={`${Styles.textColor} me-2`}>Verify</Nav.Link>
+            <Nav.Link  className={`${Styles.navLink} me-2`}>
+               <Link  to='/verify' className={Styles.link}> 
+                  Verify 
+                </Link>
+            </Nav.Link>
             
               <Link to='/auth/Login'>
                 <Button variant="light" className={`${Styles.btnBorder} ${Styles.navLink} me-2`}>
                   Sign in
                 </Button>
               </Link>
-             
-            <Button variant="dark">Start Free Trial</Button>
+              <Link to='auth/admin/singup' className={Styles.navLink}> 
+              <Button variant='dark'>
+                Start Free Trial
+              </Button>
+              </Link>
           </Nav>
           </Container>
         </Navbar>

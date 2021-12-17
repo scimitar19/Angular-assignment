@@ -57,3 +57,39 @@
         width: 28px !important;
     }
 }
+
+.mainPagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0px;
+    .disabledButton {
+        opacity: 0.6;
+    }
+    .pageNumber {
+        width: 31px;
+        padding: 10px 15px;
+        font-family: BR Firma;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1F3FA9;
+        cursor: pointer;
+    }
+    .activePage {
+        background: #253858;
+        border-radius: 3px;
+        color: white;
+
+    }
+    .previousBtn {
+        border: unset;
+    }
+    .nextBtn {
+        border: unset;
+    }
+    .rotated {
+        transform: rotate(180deg); /* Equal to rotateZ(180deg) */
+      }
+}

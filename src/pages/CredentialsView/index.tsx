@@ -3,45 +3,60 @@ import Box from "../../components/Box";
 import DynamicButton from "../../components/Button";
 import Heading from "../../components/Heading";
 import CustomTable from "../../components/Table";
-import coursesData from "./coursesData";
+import coursesData from "./coursesData.js";
 import AddOne from "./../../assets/images/icons/add-one.svg"
 const conditionalRowStyles = [{}];
 
-const CoursesView: React.FC = (props) => {
+const CredentialsView: React.FC = (props) => {
 
 const columns = [
   {
-    name: "Course name",
-    selector: (row: { courseName: any; }) => row.courseName,
+    name: "Provider",
+    selector: (row: { Provider: any; }) => row.Provider,
     sortable: true,
     conditionalCellStyles: [
       {
-          when: (row: { title: any; }) => row.title ,
+          when: (row: { Provider: any; }) => row.Provider ,
           style: {
-              backgroundColor: 'rgba(63, 195, 128, 0.9)',
-              color: 'white',
-              '&:hover': {
-                  cursor: 'pointer',
-              },
+            fontStyle: "normal",
+            fontWeight: "600",
+            fontSize: "16px",
+            lineHeight: "20px",
+            color: "#152536",
           },
       },
      ],
+  },
+  {
+    name: "Credential ID",
+    selector: (row: { CredentialID: any; }) => row.CredentialID,
+    sortable: true,
+   
   },
   
   {
     name: "Course ID",
     selector: (row: { courseId: any; }) => row.courseId,
-    sortable: true
-  },
-  {
-    name: "Provider",
-    selector: (row: { provider: any; }) => row.provider,
     sortable: true,
     conditionalCellStyles: [
       {
-          when: (row: { provider: any; }) => row.provider ,
+          when: (row: { courseId: any; }) => row.courseId ,
           style: {
               color: "#048F46",
+              
+          },
+      },
+     ],
+  },
+  {
+    name: "User Name",
+    selector: (row: { UserName: any; }) => row.UserName,
+    sortable: true,
+    conditionalCellStyles: [
+      {
+          when: (row: { UserName: any; }) => row.UserName ,
+          style: {
+              color: "#8E8E8E",
               
           },
       },
@@ -55,30 +70,31 @@ const columns = [
       {
           when: (row: { singer: any; }) => row.singer ,
           style: {
-              color: "#8E8E8E",
-              
+            color: "#B54A0E",
           },
       },
      ],
   },
   {
-    name: "Description",
-    selector: (row: { describe: any; }) => row.describe,
-    sortable: true,
+    name: "Digital Signature",
+    selector: (row: { DigitalSignature: any; }) => row.DigitalSignature,
+    width : "170px",
     conditionalCellStyles: [
       {
-          when: (row: { describe: any; }) => row.describe ,
+          when: (row: { DigitalSignature: any; }) => row.DigitalSignature ,
           style: {
-              color: "#B54A0E",
-              
+            padding : "0px"
           },
       },
      ],
+
   },
   {
     name: "Status",
     selector: (row: { status: any; }) => row.status,
     sortable: true,
+    width : "100px",
+
     conditionalCellStyles: [
       {
           when: (row: { status: any; }) => row.status == "Active" ,
@@ -92,8 +108,8 @@ const columns = [
     <>
       <Box style = {{marginBottom : "20px"}}>
         <Box className= {`d-flex justify-content-between align-items-center`}>
-          <Heading text="Courses" classes={"heading"} />
-          <DynamicButton title = "Add Course" icon = {<img src = {AddOne} className = "mr-2"/>}/>
+          <Heading text="Credentials" classes={"heading"} />
+          <DynamicButton title = "Issue Credential" icon = {<img src = {AddOne} className = "mr-2"/>}/>
         </Box>
         <CustomTable conditionalRowStyles ={conditionalRowStyles} columns = {columns} data = {coursesData}/>
         <Box style = {{height: "50px"}}>
@@ -104,4 +120,4 @@ const columns = [
   );
 };
 
-export default CoursesView;
+export default CredentialsView;

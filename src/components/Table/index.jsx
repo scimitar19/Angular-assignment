@@ -26,6 +26,7 @@ const BootyPagination = ({
   onChangeRowsPerPage, // available but not used here
   currentPage
 }) => {
+  console.log("rowsPerPage",rowsPerPage);
   const handleBackButtonClick = () => {
     onChangePage(currentPage - 1);
   };

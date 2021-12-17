@@ -13,6 +13,7 @@ import { StaticRoutesEnum } from "./utils/Enums/Routes";
 import Verify from "./pages/Verify";
 import UserSignUp from "./pages/Auth/User";
 import AdminSingUp from "./pages/Auth/Admin";
+import ProviderView from "./pages/ProviderView";
 // const Home = lazy(() => import("./pages/Home"));
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           <Route path={StaticRoutesEnum.DAHBOARD} exact component={Dashboard} />
           <Route path={StaticRoutesEnum.COURSES} exact component={CoursesView} />
           <Route path={StaticRoutesEnum.VERIFY} exact component={Verify} />
-          {/*<Route path="/dashboard" exact component={Dashboard} />*/}
+          <Route  path={StaticRoutesEnum.PROVIDER} exact component={ProviderView} />
           {/*<Route path="/courses" exact component={CoursesView} />*/}
         </MainLayout>
       </Switch>

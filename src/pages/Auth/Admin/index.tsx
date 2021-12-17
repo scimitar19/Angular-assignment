@@ -61,4 +61,4 @@ const AdminSignUp : React.FC = () => {
     )
 }
 
-export default AdminSingUp
+export default AdminSignUp

@@ -62,9 +62,8 @@ const Sidebar : React.FC<Props> = (props) => {
                 </span>
               </Link>
             </Nav.Item>
-  
-            <Nav.Item>
-              <Link  to =""className ="nav-link">
+            <Nav.Item className = {location.pathname === StaticRoutesEnum.CREDENTIAL ? 'active' : ''}>
+              <Link to = {StaticRoutesEnum.CREDENTIAL} className ="nav-link">
               <img src = {CertificateIcon} />
                 <span className  = "text">
                 Credentials

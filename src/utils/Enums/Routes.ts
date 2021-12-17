@@ -2,5 +2,7 @@ export enum StaticRoutesEnum {
     DAHBOARD = '/dashboard',
     COURSES = '/courses',
     PROVIDER = '/provider',
-    VERIFY = '/verify'
+    VERIFY = '/verify',
+    CREDENTIAL = '/credentials'
+
 }

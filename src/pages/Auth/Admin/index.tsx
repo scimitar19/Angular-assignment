@@ -10,9 +10,9 @@ const AdminSignUp : React.FC = () => {
        <Box className={Styles.bgLight}>
            <Box className="d-flex align-items-center justify-content-center mt-5">
                 <img src={Logo} className="me-2" alt="" />
-                <Box className={Styles.textColor}>
-                    Verifiable Education
-                </Box>
+                {/*<Box className={Styles.textColor}>*/}
+                {/*    Verifiable Education*/}
+                {/*</Box>*/}
             </Box>
 
           <Card className={Styles.Box}>

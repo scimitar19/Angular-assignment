@@ -22,13 +22,13 @@ function App() {
         <Route path="/auth/Login" exact component={Auth} />
         <Route path="/auth/user/Signup" exact component={UserSignUp} />
         <Route path="/auth/admin/Singup" exact component={AdminSingUp} />
-        
+
         <MainLayout>
           <Route path={StaticRoutesEnum.DAHBOARD} exact component={Dashboard} />
           <Route path={StaticRoutesEnum.COURSES} exact component={CoursesView} />
           <Route path="/verify" exact component={Verify} />
-          <Route path="/dashboard" exact component={Dashboard} />
-          <Route path="/courses" exact component={CoursesView} />
+          {/*<Route path="/dashboard" exact component={Dashboard} />*/}
+          {/*<Route path="/courses" exact component={CoursesView} />*/}
         </MainLayout>
       </Switch>
     </BrowserRouter>

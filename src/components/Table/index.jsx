@@ -1,4 +1,3 @@
-
 import DataTable from "react-data-table-component";
 import "./table.scss";
 

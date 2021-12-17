@@ -4,7 +4,7 @@ import Box from "../../../components/Box";
 import Styles from './auth.module.scss';
 import Logo from '../../../assets/images/home/siteLogo.svg';
 
-const AdminSingUp : React.FC = () => {
+const AdminSignUp : React.FC = () => {
 
     return (
        <Box className={Styles.bgLight}>
@@ -54,11 +54,11 @@ const AdminSingUp : React.FC = () => {
                 </Form.Group>
                 <Button  className={`${Styles.updateBtn} btn-block`}>
                     Get Started
-                </Button> 
+                </Button>
             </Form>
           </Card>
        </Box>
     )
 }
 
-export default AdminSingUp 
+export default AdminSingUp

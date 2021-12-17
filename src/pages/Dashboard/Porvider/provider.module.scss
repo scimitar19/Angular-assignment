@@ -37,3 +37,24 @@
         background-color: white;
     }
 }
+
+@media (max-width: 600px) {
+    .mainBox{
+        margin-bottom: 20px;
+        .rowOne {
+           
+            
+            .one {
+                width: 32%;
+            }
+            .two {
+                width: 60%;
+            }
+        }
+    
+        .backgroundWhite {
+            background-color: white;
+        }
+    }
+    
+}

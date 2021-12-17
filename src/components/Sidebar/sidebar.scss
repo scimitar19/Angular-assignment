@@ -11,7 +11,12 @@
     border-right: 1px solid #DFE1E6;
 
   }
-  
+  .closeButton {
+    position: absolute !important;
+    right: 0;
+    top: 20px;
+    display: none;
+  }
   .sidebar.is-open {
     margin-left: 0;
     transition: .5s;
@@ -93,3 +98,13 @@
     display: none;
   }
   
+  .logoutDiv {
+    position: absolute;
+    top: 80%;
+  }
+  @media (max-width: 900px) {
+    .closeButton {
+      display: revert;
+      transition: 1s;
+    }
+  }

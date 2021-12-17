@@ -51,7 +51,9 @@
     }
     
   }
-  
+  .nav-link:focus {
+    color: #000000 !important;
+  }
   .nav-item.open {
     color: #e9ecef;
     background: #313b4c;

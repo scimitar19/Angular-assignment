@@ -37,50 +37,48 @@ const Sidebar : React.FC<Props> = (props) => {
           <Nav className="flex-column pt-2" >
   
             <Nav.Item className = {location.pathname === StaticRoutesEnum.DAHBOARD ? 'active' : ''}>
-              <Nav.Link >
+              <Link to={ StaticRoutesEnum.DAHBOARD} className ="nav-link">
                 <img src = {HomeIcon} />
-                <Link to='/'>
                   <span className  = "text">
                     Home
                   </span>
-                </Link>
-              </Nav.Link>
+              </Link>
             </Nav.Item>
   
             <Nav.Item className = {location.pathname === StaticRoutesEnum.COURSES ? 'active' : ''}>
-              <Nav.Link href = {StaticRoutesEnum.COURSES}>
+              <Link to = {StaticRoutesEnum.COURSES} className ="nav-link">
               <img src = {CourseIcon} />
                 <span className  = "text">
                 Courses
                 </span>
-              </Nav.Link>
+              </Link>
             </Nav.Item>
   
             <Nav.Item className = {location.pathname === StaticRoutesEnum.PROVIDER ? 'active' : ''}>
-              <Nav.Link href = {StaticRoutesEnum.PROVIDER}>
+              <Link to = {StaticRoutesEnum.PROVIDER} className ="nav-link">
               <img src = {ProviderIcon} />
                 <span className  = "text">
                 Providers
                 </span>
-              </Nav.Link>
+              </Link>
             </Nav.Item>
   
             <Nav.Item>
-              <Nav.Link >
+              <Link  to =""className ="nav-link">
               <img src = {CertificateIcon} />
                 <span className  = "text">
                 Credentials
                 </span>
-              </Nav.Link>
+              </Link>
             </Nav.Item>
   
-            <Nav.Item>
-              <Nav.Link >
+            <Nav.Item className = {location.pathname === StaticRoutesEnum.VERIFY ? 'active' : ''}>
+              <Link to = {StaticRoutesEnum.VERIFY} className ="nav-link">
               <img src = {VerifiedIcon} />
                 <span className  = "text">
                 Verify
                 </span>
-              </Nav.Link>
+              </Link>
             </Nav.Item>
           </Nav>
         </Box>

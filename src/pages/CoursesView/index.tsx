@@ -90,12 +90,15 @@ const columns = [
 ];
   return (
     <>
-      <Box className={``}>
+      <Box style = {{marginBottom : "20px"}}>
         <Box className= {`d-flex justify-content-between align-items-center`}>
           <Heading text="Courses" classes={"heading"} />
           <DynamicButton title = "Add Course" icon = {<img src = {AddOne} className = "mr-2"/>}/>
         </Box>
         <CustomTable conditionalRowStyles ={conditionalRowStyles} columns = {columns} data = {coursesData}/>
+        <Box style = {{height: "50px"}}>
+
+        </Box>
       </Box>
     </>
   );

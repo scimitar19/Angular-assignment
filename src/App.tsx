@@ -26,7 +26,7 @@ function App() {
         <MainLayout>
           <Route path={StaticRoutesEnum.DAHBOARD} exact component={Dashboard} />
           <Route path={StaticRoutesEnum.COURSES} exact component={CoursesView} />
-          <Route path="/verify" exact component={Verify} />
+          <Route path={StaticRoutesEnum.VERIFY} exact component={Verify} />
           {/*<Route path="/dashboard" exact component={Dashboard} />*/}
           {/*<Route path="/courses" exact component={CoursesView} />*/}
         </MainLayout>

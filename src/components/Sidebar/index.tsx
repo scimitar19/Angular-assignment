@@ -11,7 +11,7 @@ import Box from "../Box";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import { StaticRoutesEnum } from "../../utils/Enums/Routes";
-
+import LogoutIcon from "./../../assets/icons/logout.svg"
 interface Props {
     isOpen ?: boolean;
     toggle ?: ()=>void
@@ -19,19 +19,22 @@ interface Props {
 
 const Sidebar : React.FC<Props> = (props) => {
   const location = useLocation();
-  console.log(location.pathname)
     return (
         <Box className={props?.isOpen ? `sidebar is-open ` :  'sidebar'}>
           <Box className="sidebar-header">
             <img src = {Logo} onClick={props?.toggle}/>
-            {/* <Button
+            <Button
               variant="link"
               onClick={props?.toggle}
-              style={{ color: "#fff" }}
-              className="mt-4"
-            >
-              close
-            </Button> */}
+              style={{ color: "black" }}
+              className="closeButton"
+            > 
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#048F46"/>
+            <path d="M22 10L10 22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M10 10L22 22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            </Button>
           </Box>
   
           <Nav className="flex-column pt-2" >
@@ -80,6 +83,17 @@ const Sidebar : React.FC<Props> = (props) => {
               </Link>
             </Nav.Item>
           </Nav>
+
+            <Box className = {'logoutDiv'}>
+            <Nav.Item >
+              <Link to={'/'} className ="nav-link">
+                <img src = {LogoutIcon} />
+                  <span className  = "text">
+                    Logout
+                  </span>
+              </Link>
+            </Nav.Item>
+            </Box>
         </Box>
       );
 }

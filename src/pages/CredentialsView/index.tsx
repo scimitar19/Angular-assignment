@@ -107,7 +107,7 @@ const columns = [
   return (
     <>
       <Box style = {{marginBottom : "20px"}}>
-        <Box className= {`d-flex justify-content-between align-items-center`}>
+        <Box className= {`d-md-flex justify-content-between align-items-center`}>
           <Heading text="Credentials" classes={"heading"} />
           <DynamicButton title = "Issue Credential" icon = {<img src = {AddOne} className = "mr-2"/>}/>
         </Box>
